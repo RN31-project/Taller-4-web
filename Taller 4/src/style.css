@@ -1,0 +1,186 @@
+:root {
+  font-family: 'Aptos', 'Segoe UI', sans-serif;
+  color: #1d2926;
+  background: #f3f5f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 80% 0%, rgba(226, 235, 191, 0.6), transparent 38rem),
+    #f3f5f2;
+}
+
+.app-navbar {
+  min-height: 72px;
+  border-bottom: 1px solid #dce2dd;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.app-brand {
+  color: #1d2926;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.app-main {
+  min-height: calc(100vh - 72px);
+  padding: clamp(2.5rem, 7vw, 5rem) 1.25rem;
+}
+
+.content-container {
+  max-width: 920px;
+}
+
+.page-heading {
+  margin-bottom: 2.5rem;
+  animation: enter 420ms ease-out both;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  color: #52735f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-heading h1 {
+  margin: 0 0 1rem;
+  color: #1d2926;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.page-heading p {
+  max-width: 34rem;
+  margin: 0;
+  color: #56635d;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.health-section,
+.info-section {
+  padding: 1.5rem 0;
+  border-top: 1px solid #dce2dd;
+  animation: enter 420ms ease-out both;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #1d2926;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.health-message {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #badbc6;
+  border-left: 4px solid #338253;
+  border-radius: 6px;
+  background: #edf7ef;
+}
+
+.health-message h4 {
+  margin: 0 0 0.35rem;
+  color: #235a36;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.health-message p,
+.muted-message {
+  margin: 0;
+  color: #56635d;
+}
+
+.status-message {
+  margin-bottom: 0;
+}
+
+.endpoint-label,
+.member-number {
+  color: #52735f;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.member-card {
+  border: 1px solid #dce2dd;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(32, 50, 42, 0.05);
+}
+
+.member-card .card-body {
+  padding: 1.25rem;
+}
+
+.member-card h3 {
+  margin: 0.35rem 0 1.25rem;
+  color: #1d2926;
+  font-size: 1.25rem;
+}
+
+.member-details {
+  margin: 0;
+}
+
+.member-details > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid #edf0ed;
+}
+
+.member-details dt {
+  color: #56635d;
+  font-weight: 500;
+}
+
+.member-details dd {
+  margin: 0;
+  color: #1d2926;
+  font-weight: 600;
+  text-align: right;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
